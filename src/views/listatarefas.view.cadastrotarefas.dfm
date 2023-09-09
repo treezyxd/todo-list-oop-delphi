@@ -1,0 +1,49 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 314
+  ClientWidth = 384
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 384
+    Height = 314
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = 104
+    ExplicitTop = 160
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Edit1: TEdit
+      Left = 24
+      Top = 32
+      Width = 321
+      Height = 23
+      TabOrder = 0
+    end
+    object Memo1: TMemo
+      Left = 24
+      Top = 72
+      Width = 321
+      Height = 153
+      TabOrder = 1
+    end
+    object Button1: TButton
+      Left = 144
+      Top = 264
+      Width = 89
+      Height = 50
+      Caption = 'Salvar'
+      TabOrder = 2
+    end
+  end
+end
