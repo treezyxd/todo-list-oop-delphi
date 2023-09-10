@@ -1,0 +1,177 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 396
+  ClientWidth = 455
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object pnlPrincipal: TPanel
+    Left = 0
+    Top = 0
+    Width = 455
+    Height = 396
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = 144
+    ExplicitTop = 200
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Panel1: TPanel
+      Left = 0
+      Top = 0
+      Width = 455
+      Height = 49
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'Lista de Tarefas'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -20
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Panel2: TPanel
+      Left = 0
+      Top = 49
+      Width = 455
+      Height = 347
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitLeft = 176
+      ExplicitTop = 208
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object Panel3: TPanel
+        Left = 0
+        Top = 296
+        Width = 455
+        Height = 51
+        Align = alBottom
+        BevelOuter = bvNone
+        Padding.Left = 3
+        Padding.Top = 3
+        Padding.Right = 3
+        Padding.Bottom = 3
+        TabOrder = 0
+        object Button1: TButton
+          AlignWithMargins = True
+          Left = 6
+          Top = 3
+          Width = 75
+          Height = 45
+          Margins.Top = 0
+          Margins.Bottom = 0
+          Align = alLeft
+          Caption = 'Novo'
+          TabOrder = 0
+          ExplicitLeft = 192
+          ExplicitTop = 16
+          ExplicitHeight = 25
+        end
+        object Button2: TButton
+          AlignWithMargins = True
+          Left = 374
+          Top = 3
+          Width = 75
+          Height = 45
+          Margins.Top = 0
+          Margins.Bottom = 0
+          Align = alRight
+          Caption = 'Cancelar'
+          TabOrder = 1
+          ExplicitLeft = 192
+          ExplicitTop = 16
+          ExplicitHeight = 25
+        end
+        object Button3: TButton
+          AlignWithMargins = True
+          Left = 87
+          Top = 3
+          Width = 75
+          Height = 45
+          Margins.Top = 0
+          Margins.Bottom = 0
+          Align = alLeft
+          Caption = 'Editar'
+          TabOrder = 2
+          ExplicitLeft = 192
+          ExplicitTop = 16
+          ExplicitHeight = 25
+        end
+      end
+      object Panel4: TPanel
+        Left = 0
+        Top = 0
+        Width = 455
+        Height = 25
+        Align = alTop
+        BevelOuter = bvNone
+        Padding.Left = 2
+        Padding.Top = 2
+        Padding.Right = 2
+        Padding.Bottom = 2
+        TabOrder = 1
+        object Edit1: TEdit
+          Left = 2
+          Top = 2
+          Width = 359
+          Height = 21
+          Align = alLeft
+          TabOrder = 0
+        end
+        object Button4: TButton
+          Left = 378
+          Top = 2
+          Width = 75
+          Height = 21
+          Align = alRight
+          Caption = 'Pesquisar'
+          TabOrder = 1
+          ExplicitLeft = 240
+          ExplicitTop = 0
+          ExplicitHeight = 25
+        end
+      end
+      object Panel5: TPanel
+        Left = 0
+        Top = 25
+        Width = 455
+        Height = 271
+        Align = alClient
+        BevelOuter = bvNone
+        Padding.Left = 3
+        Padding.Top = 3
+        Padding.Right = 3
+        Padding.Bottom = 3
+        TabOrder = 2
+        ExplicitLeft = 128
+        ExplicitTop = 144
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+        object ListBox1: TListBox
+          Left = 3
+          Top = 3
+          Width = 449
+          Height = 265
+          Align = alClient
+          ItemHeight = 15
+          TabOrder = 0
+          ExplicitLeft = 152
+          ExplicitTop = 80
+          ExplicitWidth = 121
+          ExplicitHeight = 97
+        end
+      end
+    end
+  end
+end

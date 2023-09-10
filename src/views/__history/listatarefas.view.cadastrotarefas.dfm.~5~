@@ -1,0 +1,72 @@
+object frmCadTarefas: TfrmCadTarefas
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Tarefas'
+  ClientHeight = 314
+  ClientWidth = 384
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -17
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 23
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 384
+    Height = 314
+    Align = alClient
+    BevelOuter = bvNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    Padding.Left = 10
+    Padding.Top = 10
+    Padding.Right = 10
+    Padding.Bottom = 10
+    ParentFont = False
+    TabOrder = 0
+    ExplicitWidth = 378
+    ExplicitHeight = 305
+    object Panel2: TPanel
+      Left = 10
+      Top = 10
+      Width = 364
+      Height = 294
+      Align = alClient
+      BevelOuter = bvNone
+      Padding.Left = 10
+      Padding.Top = 10
+      Padding.Right = 10
+      Padding.Bottom = 10
+      TabOrder = 0
+      ExplicitLeft = 104
+      ExplicitTop = 136
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object Panel3: TPanel
+        Left = 10
+        Top = 10
+        Width = 344
+        Height = 31
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+        object Edit1: TEdit
+          Left = 0
+          Top = 0
+          Width = 344
+          Height = 31
+          Align = alClient
+          TabOrder = 0
+          Text = 'Edit1'
+          OnChange = Edit1Change
+          ExplicitHeight = 25
+        end
+      end
+    end
+  end
+end

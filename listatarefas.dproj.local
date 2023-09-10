@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/09/08 22:56:15.000.714,=C:\Users\treezy\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/08 22:58:48.000.049,C:\Users\treezy\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Delphi\oop_projeto\src\views\listatarefas.view.main.dfm</Transaction>
+    <Transaction>2023/09/08 22:58:48.000.049,C:\Users\treezy\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Delphi\oop_projeto\src\views\listatarefas.view.main.pas</Transaction>
+    <Transaction>2023/09/08 22:59:06.000.867,C:\Users\treezy\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Delphi\oop_projeto\oop_projeto.dproj</Transaction>
+    <Transaction>2023/09/08 23:00:31.000.153,=C:\Delphi\oop_projeto\Unit1.pas</Transaction>
+    <Transaction>2023/09/09 01:16:05.000.645,C:\Delphi\oop_projeto\Unit1.pas=C:\Delphi\oop_projeto\src\models\listatarefas.model.usuario.pas</Transaction>
+    <Transaction>2023/09/09 01:21:06.000.916,=C:\Delphi\oop_projeto\Unit1.pas</Transaction>
+    <Transaction>2023/09/09 01:26:57.000.825,C:\Delphi\oop_projeto\Unit1.pas=C:\Delphi\oop_projeto\src\models\listatarefas.model.tarefas.pas</Transaction>
+    <Transaction>2023/09/09 01:44:03.000.873,=C:\Delphi\oop_projeto\Unit1.pas</Transaction>
+    <Transaction>2023/09/09 01:44:41.000.376,=C:\Delphi\oop_projeto\Unit2.pas</Transaction>
+    <Transaction>2023/09/09 01:49:18.000.854,C:\Delphi\oop_projeto\Unit2.dfm=C:\Delphi\oop_projeto\src\views\listatarefas.view.cadastrousuario.dfm</Transaction>
+    <Transaction>2023/09/09 01:49:18.000.854,C:\Delphi\oop_projeto\Unit2.pas=C:\Delphi\oop_projeto\src\views\listatarefas.view.cadastrousuario.pas</Transaction>
+    <Transaction>2023/09/09 16:20:30.000.861,=C:\Delphi\oop_projeto\Unit1.pas</Transaction>
+    <Transaction>2023/09/09 16:20:40.000.520,=C:\Delphi\oop_projeto\Unit3.pas</Transaction>
+    <Transaction>2023/09/09 16:23:09.000.544,C:\Delphi\oop_projeto\src\views\listatarefas.view.cadastrotarefas.dfm=C:\Delphi\oop_projeto\Unit3.dfm</Transaction>
+    <Transaction>2023/09/09 16:23:09.000.544,C:\Delphi\oop_projeto\src\views\listatarefas.view.cadastrotarefas.pas=C:\Delphi\oop_projeto\Unit3.pas</Transaction>
+    <Transaction>2023/09/09 17:40:39.000.641,=C:\Delphi\oop_projeto\Unit4.pas</Transaction>
+    <Transaction>2023/09/09 17:52:38.000.446,C:\Delphi\oop_projeto\src\views\listatarefas.view.login.dfm=C:\Delphi\oop_projeto\Unit4.dfm</Transaction>
+    <Transaction>2023/09/09 17:52:38.000.446,C:\Delphi\oop_projeto\src\views\listatarefas.view.login.pas=C:\Delphi\oop_projeto\Unit4.pas</Transaction>
+    <Transaction>2023/09/09 18:07:52.000.643,C:\Delphi\oop_projeto\listatarefas.dproj=C:\Delphi\oop_projeto\oop_projeto.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

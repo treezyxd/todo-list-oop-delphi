@@ -1,7 +1,7 @@
-object Form1: TForm1
+object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Lista de Tarefas'
   ClientHeight = 396
   ClientWidth = 455
   Color = clBtnFace
@@ -10,6 +10,8 @@ object Form1: TForm1
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poScreenCenter
+  OnCreate = FormCreate
   TextHeight = 15
   object pnlPrincipal: TPanel
     Left = 0
@@ -19,10 +21,8 @@ object Form1: TForm1
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 144
-    ExplicitTop = 200
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitWidth = 449
+    ExplicitHeight = 387
     object Panel1: TPanel
       Left = 0
       Top = 0
@@ -38,6 +38,7 @@ object Form1: TForm1
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 0
+      ExplicitWidth = 449
     end
     object Panel2: TPanel
       Left = 0
@@ -47,10 +48,8 @@ object Form1: TForm1
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 176
-      ExplicitTop = 208
-      ExplicitWidth = 185
-      ExplicitHeight = 41
+      ExplicitWidth = 449
+      ExplicitHeight = 338
       object Panel3: TPanel
         Left = 0
         Top = 296
@@ -63,6 +62,8 @@ object Form1: TForm1
         Padding.Right = 3
         Padding.Bottom = 3
         TabOrder = 0
+        ExplicitTop = 287
+        ExplicitWidth = 449
         object Button1: TButton
           AlignWithMargins = True
           Left = 6
@@ -74,9 +75,7 @@ object Form1: TForm1
           Align = alLeft
           Caption = 'Novo'
           TabOrder = 0
-          ExplicitLeft = 192
-          ExplicitTop = 16
-          ExplicitHeight = 25
+          OnClick = Button1Click
         end
         object Button2: TButton
           AlignWithMargins = True
@@ -89,9 +88,7 @@ object Form1: TForm1
           Align = alRight
           Caption = 'Cancelar'
           TabOrder = 1
-          ExplicitLeft = 192
-          ExplicitTop = 16
-          ExplicitHeight = 25
+          ExplicitLeft = 368
         end
         object Button3: TButton
           AlignWithMargins = True
@@ -104,9 +101,6 @@ object Form1: TForm1
           Align = alLeft
           Caption = 'Editar'
           TabOrder = 2
-          ExplicitLeft = 192
-          ExplicitTop = 16
-          ExplicitHeight = 25
         end
       end
       object Panel4: TPanel
@@ -121,13 +115,19 @@ object Form1: TForm1
         Padding.Right = 2
         Padding.Bottom = 2
         TabOrder = 1
+        ExplicitWidth = 449
         object Edit1: TEdit
-          Left = 2
+          AlignWithMargins = True
+          Left = 5
           Top = 2
-          Width = 359
+          Width = 370
           Height = 21
-          Align = alLeft
+          Margins.Top = 0
+          Margins.Bottom = 0
+          Align = alClient
           TabOrder = 0
+          ExplicitWidth = 364
+          ExplicitHeight = 23
         end
         object Button4: TButton
           Left = 378
@@ -137,9 +137,7 @@ object Form1: TForm1
           Align = alRight
           Caption = 'Pesquisar'
           TabOrder = 1
-          ExplicitLeft = 240
-          ExplicitTop = 0
-          ExplicitHeight = 25
+          ExplicitLeft = 372
         end
       end
       object Panel5: TPanel
@@ -154,22 +152,37 @@ object Form1: TForm1
         Padding.Right = 3
         Padding.Bottom = 3
         TabOrder = 2
-        ExplicitLeft = 128
-        ExplicitTop = 144
-        ExplicitWidth = 185
-        ExplicitHeight = 41
-        object ListBox1: TListBox
+        ExplicitWidth = 449
+        ExplicitHeight = 262
+        object ListView1: TListView
           Left = 3
           Top = 3
           Width = 449
           Height = 265
           Align = alClient
-          ItemHeight = 15
+          BevelOuter = bvNone
+          Columns = <
+            item
+              Caption = 'Id'
+            end
+            item
+              Caption = 'Titulo'
+              Width = 200
+            end
+            item
+              Caption = 'Data/Hora'
+              Width = 150
+            end>
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -17
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
           TabOrder = 0
-          ExplicitLeft = 152
-          ExplicitTop = 80
-          ExplicitWidth = 121
-          ExplicitHeight = 97
+          ViewStyle = vsReport
+          ExplicitWidth = 443
+          ExplicitHeight = 256
         end
       end
     end

@@ -1,0 +1,70 @@
+unit listatarefas.view.main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  listatarefas.view.login, listatarefas.model.usuario;
+
+type
+  TfrmMain = class(TForm)
+    pnlPrincipal: TPanel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Panel4: TPanel;
+    Edit1: TEdit;
+    Button4: TButton;
+    Panel5: TPanel;
+    ListBox1: TListBox;
+    procedure FormCreate(Sender: TObject);
+  private
+    function ValidaUsuario(aEmail, aSenha: String): Boolean;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMain: TfrmMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+var
+  lLogin: TfrmLogin;
+begin
+  lLogin := TfrmLogin.Create(nil);
+  try
+    lLogin.ShowModal;
+    if not ValidaUsuario(lLogin.edtEmail.Text, lLogin.edtSenha.Text) then
+    begin
+      ShowMessage('Usuario e/ou Senha Inválido(s)');
+      Application.Terminate;
+    end;
+  finally
+    lLogin.Free;
+  end;
+end;
+
+function TfrmMain.ValidaUsuario(aEmail, aSenha: String): Boolean;
+var
+  lUsuario: TUsuario;
+begin
+  lUsuario := TUsuario.Create;
+  try
+    lUsuario.Email := 'email@email.com';
+    lUsuario.Senha := '1234';
+
+    Result := ((lUsuario.Email = aEmail) and (lUsuario.Senha = aSenha));
+  finally
+    lUsuario.Free;
+  end;
+end;
+
+end.
